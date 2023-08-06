@@ -7,3 +7,12 @@ body {
   /* background-color: #3E4C5E; */
   background-color: #252C33;
 }
+.arrow--icon{
+  transition: all ease 0.3s;
+}
+
+.custom--hover:hover .arrow--icon {
+  scale: 1.05;
+  color: #DF2935;
+  text-shadow: 2px 2px black;
+}

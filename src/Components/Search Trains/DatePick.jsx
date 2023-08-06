@@ -1,4 +1,3 @@
-import React from "react";
 import { Input } from "@chakra-ui/react";
 import { BsCalendar2Date } from "react-icons/bs";
 export default function DatePick({ setDate }) {
@@ -12,12 +11,13 @@ export default function DatePick({ setDate }) {
         width={"80%"}
         color={"black"}
         border={"2px"}
+        borderColor={'gray.300'}
         // backgroundColor={"gray.400"}
         _placeholder={{ color: "black" }}
         position={"relative"}
         onChange={(event) => setDate(event.target.value)}
       />
-      <BsCalendar2Date className="absolute right-24 bottom-[85px] lg:hidden" />
+      {/* <BsCalendar2Date className="absolute right-24 bottom-[240px] lg:hidden" /> */}
     </>
   );
 }

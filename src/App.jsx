@@ -1,10 +1,18 @@
-import Layout from "./Components/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Homepage from "./Components/Homepage";
+import PNRStatus from "./Components/PNR Status/PNRStatus";
 
 function App() {
   return (
-    <div>
-      <Layout />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route index element={<Homepage />}/>
+        <Route path="pnr" element={<PNRStatus />}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
